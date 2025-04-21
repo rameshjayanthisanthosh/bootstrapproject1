@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .dark-theme {
+         background-color: #121212;
+         color: #ffffff;
+        }
+        body {
+            color: black;
+        }
+        .fixed-size-img {
+            height: 200px; 
+            object-fit: cover; 
+        }
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+        }
+        .card{
+        margin: 2px;
+        border: 2px solid gray;
+        }
+        .viewlist a{
+            color: #121212;
+        }
+        .dark-mode {
+            background-color: #3f3f3f;
+            color: white;
+        }
+        .dark-mode footer, header{
+            background-color: #f8f9fa6b;
+          }
+        .light-mode {
+            background-color: #f8f9fa;
+            color: black;
+        }
+      
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ABC Blog</div>
+        <nav>
+            <ul>
+                <li><a href="blog.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="first.html">Single Post</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-checkbox">
+            <label for="theme-checkbox">Theme</label>
+        </div>
+    </header>
+    
+    
+    <section class="latest-posts">
+        <div class="posts-grid"></div>
+    </section>
+    
+    <main>
+        <section class="container my-5">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://www.tourvinicuncaperu.com/wp-content/uploads/2022/01/rainbow-mountain-attractions.jpg" class="card-img-top fixed-size-img" alt="Rainbow Mountain">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 1</a>
+                            <h5 class="card-title">Rainbow Mountain</h5>
+                            <p class="card-text">Discover the beauty of Rainbow Mountain.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1666021/pexels-photo-1666021.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Forest View">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 2</a>
+                            <h5 class="card-title">Forest View</h5>
+                            <p class="card-text">Experience the peaceful beauty of nature.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card">
+                        <img src="https://images.pexels.com/photos/1107717/pexels-photo-1107717.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="card-img-top fixed-size-img" alt="Snowy Mountains">
+                        <div class="card-body">
+                            <a href="#" class="btn btn-primary">Link 3</a>
+                            <h5 class="card-title">Snowy Mountains</h5>
+                            <p class="card-text">Enjoy breathtaking snowy peaks.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+        </section>
+       
+    </main>
+</body>
+
+<footer class="border border-dark" >
+    <div>
+        <div class="row text-center text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">About</h5>
+                <p>something...</p>
+                <p>Email: abc@email.com</p>
+            </div>
+
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Quick Link</h5>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Home</a></p>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">About</a></p>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Blog</a></p>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Contact</a></p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Category</h5>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Lifestyle</a></p>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Technology</a></p>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Travel</a></p>
+                <p><a href="#" class="text-dark" style="text-decoration: none;">Business</a></p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold">Weekly Newsletter</h5>
+                <form>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const checkbox = document.getElementById('theme-checkbox');
+    const body = document.body;
+
+    checkbox.addEventListener('change', function() {
+        if (this.checked) {
+            body.classList.remove('light-mode');
+            body.classList.add('dark-mode');
+        } else {
+            body.classList.remove('dark-mode');
+            body.classList.add('light-mode');
+        }
+    });
+</script>
+</html>
