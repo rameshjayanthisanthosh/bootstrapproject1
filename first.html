@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>singlepost</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 30px;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+        }
+        .dark-mode {
+            background-color: #3f3f3f;
+            color: white;
+        }
+        .dark-mode footer, header{
+            background-color: #f8f9fa6b;
+          }
+        .light-mode {
+            background-color: #f8f9fa;
+            color: black;
+        }
+        .container{
+            padding-left: 175px;
+            padding-right: 175px;
+            text-align: justify;
+        }
+        .mountain-img{
+          display: flex;
+          justify-content: center;
+         height: 550px;
+        }
+
+
+</style>
+</head>
+<header>
+    <div class="logo">ABC Blog</div>
+        <nav>
+            <ul>
+                <li><a href="blog.html">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="first.html">Single Post</a></li>
+                <li><a href="#">Pages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="theme-toggle">
+            <input type="checkbox" id="theme-checkbox">
+            <label for="theme-checkbox">Theme</label>
+        </div>
+
+</header>
+<body>
+    <body>
+        <div class="container" >
+            <div class="badge bg-primary text-white mb-2"><a href="#" class="btn btn-primary">Travel</a></div>
+            <h1 class="fw-bold">Exploring the Beauty of Rainbow Mountain</h1>
+            <p>
+                <i class="bi bi-person" ></i> anyname &nbsp; | &nbsp; date...
+            </p>
+            <div class="mountain-img">
+            <img src="https://images.hdqwalls.com/download/rainbow-mountains-in-peru-4k-jc-1920x1080.jpg">
+            </div>
+            <p class="mt-4">
+                Rainbow Mountain, also known as Vinicunca, is a breathtaking natural wonder located in the Peruvian Andes. With its vibrant hues and striking landscapes, it has become a must-visit destination for adventurers and nature lovers alike.
+            </p>
+            <p>
+                Hiking up Rainbow Mountain is a challenging yet rewarding experience. The journey takes you through stunning valleys, past herds of alpacas, and offers panoramic views of the surrounding snow-capped peaks. The vibrant colors of the mountain are a result of mineral deposits, creating a mesmerizing spectacle.
+            </p>
+            <h3 class="fw-bold mt-4">Best Time to Visit</h3>
+            <p>
+                The best time to visit Rainbow Mountain is during the dry season, from May to September. This period offers clear skies and excellent hiking conditions, ensuring you can fully appreciate the mountain’s vivid colors.
+            </p>
+            <p>
+                Be sure to acclimate to the high altitude before embarking on the trek. The trail reaches elevations above 5,000 meters, so proper preparation and hydration are essential.
+            </p>
+            <h3 class="fw-bold mt-4">How to Get There</h3>
+            <p>
+                Rainbow Mountain is accessible via a day trip from Cusco. Most visitors take guided tours that include transportation, meals, and an experienced guide. The trek itself takes approximately 3 to 4 hours, depending on your pace.
+            </p>
+            <p>
+                If you’re looking for a truly unforgettable experience, consider visiting at sunrise to witness the mountain bathed in golden light.
+            </p>
+        </p>
+        <img src="rainbow_mountain.png" class="img-fluid rounded" alt="Rainbow Mountain">
+        <p class="mt-4">
+        </div>
+    </body>
+    <script>
+        const checkbox = document.getElementById('theme-checkbox');
+        const body = document.body;
+
+        checkbox.addEventListener('change', function() {
+            if (this.checked) {
+                body.classList.remove('light-mode');
+                body.classList.add('dark-mode');
+            } else {
+                body.classList.remove('dark-mode');
+                body.classList.add('light-mode');
+            }
+        });
+    </script>
+        <footer>
+            <div class=" text-center text-md-left">
+                <div class="row text-center text-md-left">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">About</h5>
+                        <p>something...</p>
+                        <p>Email: abc@email.com</p>
+                    </div>
+        
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Quick Link</h5>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Home</a></p>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">About</a></p>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Blog</a></p>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Contact</a></p>
+                    </div>
+        
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Category</h5>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Lifestyle</a></p>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Technology</a></p>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Travel</a></p>
+                        <p><a href="#" class="text-dark" style="text-decoration: none;">Business</a></p>
+                    </div>
+        
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h5 class="text-uppercase mb-4 font-weight-bold">Weekly Newsletter</h5>
+                        <form>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Your Email">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </footer>
+</html>
